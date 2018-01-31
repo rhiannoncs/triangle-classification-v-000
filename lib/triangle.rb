@@ -12,8 +12,11 @@ class Triangle
       raise TriangleError
     else
       if side1_length == side2_length && side2_length == side3_length
-       :equilateral
-      elsif 
+        :equilateral
+      elsif side1_length == side2_length || side2_length == side3_length || side1_length == side3_length
+        :isosceles
+      else
+        
   end
 end
 
